@@ -8,6 +8,7 @@
   body {
     font-family: 'EBGaramond-italic', serif;
     font-size: x-large;
+
     
   }
   
@@ -157,6 +158,24 @@ il font-size per l'intero documento HTML sarà di 16 pixel.
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(27, 1, 1)); /* Sfumatura bianca trasparente */
 }
 
+.centroVert{
+    display: flex;
+    align-items: center;
+}
 
 
 
+.floreal-div{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative; /* Posizionamento relativo per consentire il posizionamento assoluto all'interno */
+
+}
+.floreal-div .linea{
+    width: 100%; /* Larghezza massima */
+    border-top: 5px solid rgb(144, 123, 90); /* Stile della linea */
+    position: absolute;
+
+}
+.
