@@ -1,0 +1,162 @@
+/* definisco le classi che uso nel file HTML */
+@font-face {
+    font-family: 'EBGaramond-italic';
+    src: url('/Font/EBGaramond-Italic-VariableFont_wght.ttf') format('truetype');
+    /* Specifica altri formati del font se necessario */
+  }
+  
+  body {
+    font-family: 'EBGaramond-italic', serif;
+    font-size: x-large;
+    
+  }
+  
+
+.navbar {
+    background-color: rgb(235 67 38) !important;
+    opacity: 0.9;
+    
+}
+
+.navbar .nav-link{
+    font-size: 30px ;
+    
+
+}
+
+.navbar .nav-link[aria-current="page"]{
+
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgb(224, 204, 16); /* offset-x offset-y blur-radius color */;
+}
+
+
+
+.head-banner{ 
+    background-color: #cda170;
+    background-image: url('Image/ROCCA_MAIN.jpg');
+    background-size: cover;
+    background-position: center;
+    /*
+    "background-blend-mode: multiply;" è una regola CSS che imposta la modalità di fusione 
+    per l'immagine di sfondo di un elemento HTML. 
+    In particolare, la modalità di fusione "multiply" moltiplica i valori RGB 
+    dell'immagine di sfondo con quelli dei contenuti sovrapposti, producendo 
+    un effetto di fusione tra l'immagine di sfondo e i contenuti. 
+    Questo può creare un effetto di scurimento o modifica dei colori dei contenuti 
+    sovrapposti all'immagine di sfondo, a seconda dei colori presenti nell'immagine di sfondo stessa.
+    */
+    background-blend-mode: multiply;
+    padding-top: 8rem;  /* il padding è lo spazio INTERNO al blocco, tra il contenuto del blocco e il bordo del blocco */
+    padding-bottom: 8rem;
+}
+
+.titolo{
+    color:white;
+    font-size: 65px;
+    text-shadow: 0px 0px 20px black(0, 0, 0, 0.5); 
+}
+
+.sezione-icone{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.ravenna-giallo{
+    /* background-color: #e1cc42 !important; */
+    background-color: rgb(209 210 110) !important;
+}
+
+.sezione-immagini .immagine{
+    min-height: 30rem;
+    background-size: cover;
+}
+
+.sezione-immagini .testo{
+    padding: 3rem;
+}
+
+
+.sezione-membri{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.presentazione-membro img{
+    max-height: 200px;
+}
+
+
+/*
+rem è unità di misura. Indica N volte il font radice utilizzato dentro l'elemento
+NB  il font radice di un documento HTML ha un valore di default definito dal browser. 
+Di solito, il valore predefinito del font radice (cioè il font utilizzato a livello più alto 
+nell'albero DOM) è "16px" o "1rem". Questo significa che se non specificato diversamente, 
+il font-size per l'intero documento HTML sarà di 16 pixel.
+*/
+@media screen and (min-width: 768px) {
+    .head-banner{
+        padding-top: 16rem; 
+        padding-bottom: 12rem; 
+    }
+
+    .sezione-immagini .testo{
+        padding: 7rem;
+    }
+    
+}
+
+.immagine-sinistra{
+
+    margin-right: 30px;
+    max-height: 200px;
+    
+}
+
+.footer{
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+    background-color: rgb(173, 174, 104);
+}
+.list-inline-item{
+    margin-right: 2rem;
+}
+
+
+.list-inline-item a{
+    color: black;
+}
+
+.padding-globale{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.immagini-tagliate{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+
+.rounded-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px; /* Regola il raggio di arrotondamento dei bordi */
+}
+
+
+
+.rounded-image:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(27, 1, 1)); /* Sfumatura bianca trasparente */
+}
+
+
+
+
