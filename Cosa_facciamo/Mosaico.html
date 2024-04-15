@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Includi Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Includi foglio di stile personalizzato -->
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- Includi jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <!-- Includi favicon -->
+    <link rel="icon" href="../Image/favicon.ico" type="image/x-icon">
+
+    <title>Il mosaico</title>
+</head>
+
+<body class="ravenna-giallo">
+    <!--
+    NAVBAR aggiunta con script per rendere più modulare il sito.
+    Per modificare la navbar andare su Navbar.html
+    -->
+    <div class="container">   
+        <div id="navbar-placeholder"></div>
+          <script>
+            $(function() {
+                // Carica il file Navbar.html dalla sottocartella "assets"
+                $("#navbar-placeholder").load("../Assets/Navbar.html", function() {
+                    // Una volta che la navbar è stata caricata, imposta aria-current sulla voce specifica
+                    var currentUrl = window.location.pathname;
+                    // Seleziona l'elemento nella navbar che corrisponde all'URL della pagina corrente
+                    var $currentNavItem = $("#navbar-placeholder .nav-link[href='" + currentUrl + "']");
+                    // Imposta l'attributo aria-current="page" sull'elemento selezionato
+                    $currentNavItem.attr("aria-current", "page");
+                });
+            });
+          </script>
+    </div>
+
+    <section class="pt-3 text-center" style="margin-top: 10rem;">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-6 col-md-8 mx-auto">
+                  <h1>
+                      IL MOSAICO REALIZZATO
+                  </h1>
+                  <p class="lead"> Qui potrete avrere informazioni sul mosaico realizzato in sostituzione della vecchia fontana</p>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <section class="sezione-immagini">
+      <div class="container mb-lg-4" style="margin-top: 0rem;">
+        <div class="row">
+          <div class="col-lg-6 order-lg-2 immagine centroVert">
+            <img src="../Image/mosaico 2.jpg" alt="foto mosaico 2" class="immagini-tagliate">
+          </div>
+          <div class="col-lg-6 order-lg-1 testo">
+            <p>Nel 2020 la Giunta comunale di Ravenna ha approvato un progetto per il recupero complessivo della Rocca Brancaleone e l’Associazione Amata Brancaleone Aps, essendo venuta a conoscenza che non era più recuperabile la funzionalità dell’acqua nella fontana, che sarebbe stata trasformata in un’aiuola, ha proposto al Comune e alla Soprintendenza di Ravenna, di realizzare un progetto artistico di decorazione a mosaico della struttura in marmo bianco.  </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container" >
+        <div class="row">
+          <div class="col-lg-6 immagine centroVert">
+            <img src="../Image/mosaico 1.jpg" class="immagini-tagliate" alt="foto mosaico 1">
+          </div>
+          <div class="col-lg-6 testo ">
+            La ristrutturazione della ex fontana in disuso da anni della Rocca Brancaleone con la realizzazione di un grande mosaico che decora tutta la parte superiore nella struttura, è stato realizzato dalla mosaicista Anna Agati in collaborazione con gli allievi dell'Accademia delle Belle Arti di Ravenna. I costi del materiale sono stati interamente sostenuti dall'Associazione Amata Brancaleone Aps.  Il mosaico è stato inaugurato l' 11 novembre 2023 nell'ambito della Biennale del Mosaico contemporaneo. 
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <div class="container">
+      <p>
+      Il mosaico, creato con l’intento di donare una nuova pelle alla fontana degli anni ‘80 riconvertita ad aiuola fiorita, è un omaggio alle due colonne portanti della cultura e arte ravennate: il mosaico e Dante Alighieri. La forma di tre cerchi che si intersecano orizzontalmente ha evocato all’artista e mosaicista Anna Agati le tre cantiche della Divina Commedia. 
+
+Agati si è così ispirata ad alcune delle più famose illustrazioni di William Blake, traducendole e reinterpretandole a mosaico. 
+
+Eccentrico, esoterico e visionario, William Blake (1757-1827) era un poeta, pittore e incisore inglese. Realizzò il massimo monumento illustrato dantesco dell’età moderna attraverso 102 disegni a matita, acquerello e inchiostro in cui i corpi michelangioleschi, forti e possenti, sono immersi in un’atmosfera irrazionale e sovrannaturale, tra sogno e incubo. 
+
+ 
+
+Per raccogliere i fondi necessari per sostenere l’acquisto dei costosi materiali per la realizzazione, è stata fatto un crowdfunding che si è concluso con successo per l’adesione di tanti cittadini e con il sostegno della Banca di Credito Cooperativo Ravennate, Forlivese e Imolese. Alcune importanti aziende hanno supportato il progetto fornendo gratuitamente i loro materiali: la FILA spa, la MAPEI spa, e l’ITALCER spa, e RoccaLab.  
+      </p>
+    </div>
+
+    
+    <!-- divider floreale -->
+    <section class="mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 col-md-5 ">
+            <hr class="linea">
+          </div>
+          <div class="col-4 col-md-2">
+            <div class="container floreal-div">
+              <img class="img-fluid" src="../Image/floral-design-divider-by-Vexels.png" alt="Divisione Floreale">
+            </div>
+          </div>
+          <div class="col-4 col-md-5">
+            <hr class="linea">
+          </div>
+        </div>   
+      </div>
+    </section>
+
+
+
+
+
+
+    <!--
+    FOOTER aggiunto con script per rendere più modulare il sito.
+    Per modificare la navbar andare su Assets/Footer.html
+    -->
+    <div class="container mt-5">   
+        <div id="footer-placeholder"></div>
+        <script>
+          $(function(){
+            // Carica il file Navbar.html dalla sottocartella "assets"
+            $("#footer-placeholder").load("../Assets/Footer.html");
+          });
+        </script>
+    </div>
+    
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
