@@ -67,7 +67,17 @@
 
 .ravenna-giallo{
     /* background-color: #e1cc42 !important; */
-    background-color: rgb(209 210 110) !important;
+    /*background-color: rgb(209 210 110) !important;*/
+    
+    /* Imposta il gradiente lineare */
+    background: linear-gradient(to bottom, #f5c957, #dbc230); /* Puoi modificare i colori a tuo piacimento */
+    /* Per impostare un gradiente orizzontale invece di uno verticale, utilizza "to right" */
+    /* background: linear-gradient(to right, #ff7e5f, #feb47b); */
+            
+    /* Assicura che il gradiente copra l'intera pagina */
+    
+    margin: 0;
+
 }
 
 .sezione-immagini .immagine{
