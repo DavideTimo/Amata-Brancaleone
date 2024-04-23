@@ -253,3 +253,51 @@ il font-size per l'intero documento HTML sarà di 16 pixel.
     font-weight: 700;
 
 }
+
+
+/*
+    Codice preso da Shape Divider App. Onde in alto, pagina architettura
+*/
+.custom-shape-divider-bottom-1713886559 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1713886559 svg {
+    position: relative;
+    display: block;
+    width: calc(141% + 1.3px);
+    height: 71px;
+}
+
+.custom-shape-divider-bottom-1713886559 .shape-fill {
+    fill: #ae8f1e;
+}
+
+/*
+    Codice preso da Shape Divider App. Onde in basso, pagina architettura
+*/
+.custom-shape-divider-top-1713887032 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1713887032 svg {
+    position: relative;
+    display: block;
+    width: calc(141% + 1.3px);
+    height: 71px;
+}
+
+.custom-shape-divider-top-1713887032 .shape-fill {
+    fill: #ae8f1e;
+}
