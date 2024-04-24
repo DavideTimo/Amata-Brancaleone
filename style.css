@@ -142,6 +142,25 @@ il font-size per l'intero documento HTML sarà di 16 pixel.
     
 }
 
+@media (max-width: 768px){
+
+    .headerTitle-chisiamo{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 1; /* Assicura che il testo sia sopra l'immagine */
+        font-weight:100;
+        background-color: #ae8f1e;
+    }
+
+    .headerImg-chisiamo{
+        position: relative; /* Assicura che l'immagine abbia una posizione relativa per posizionare il testo sopra */
+    }
+}
+
+
 .immagine-sinistra{
 
     margin-right: 30px;
@@ -300,4 +319,12 @@ il font-size per l'intero documento HTML sarà di 16 pixel.
 
 .custom-shape-divider-top-1713887032 .shape-fill {
     fill: #ae8f1e;
+}
+
+.header-dariusare{
+    
+    background-size: cover;
+    background-position: center;
+    padding-top: 7rem;
+    padding-bottom: 18rem;
 }
