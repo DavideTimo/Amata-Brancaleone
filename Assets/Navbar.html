@@ -14,9 +14,30 @@
           <li class="nav-item">
             <a class="nav-link" href="/Chi_siamo.html">Chi siamo</a>
           </li>
+
+          <!--
           <li class="nav-item">
             <a class="nav-link" href="/Cosa_facciamo.html">Cosa facciamo</a>
           </li>
+          -->
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" 
+              id="navbarDropdown" 
+              href="/Cosa_facciamo.html" 
+              role="button" 
+              aria-haspopup="true"
+              aria-expanded="false">
+              Cosa facciamo
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="../Cosa_facciamo/Mosaico.html"> Il mosaico </a>
+              <a class="dropdown-item" href="../Cosa_facciamo/rievocazione.html"> La rievocazione </a>
+            </div>
+          </li>
+
+
+
           <li class="nav-item">
             <a class="nav-link" href="/Sostienici.html">Sostienici
               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-heart" viewBox="0 2 16 16">
@@ -29,4 +50,13 @@
       </div>
     </div>
 </nav>
+
+<script>
+  // Modifica il comportamento del dropdown menu per aprirsi passandoci sopra con il mouse
+  $('.dropdown').hover(function() {
+    $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn(200);
+  }, function() {
+    $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut(200);
+  });
+</script>
 
