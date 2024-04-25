@@ -51,6 +51,8 @@
     </div>
 </nav>
 
+
+<!--
 <script>
   // Modifica il comportamento del dropdown menu per aprirsi passandoci sopra con il mouse
   $('.dropdown').hover(function() {
@@ -59,4 +61,33 @@
     $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut(200);
   });
 </script>
+-->
+
+<script>
+  //script per aprire il sottomenu nella navbar passandoci sopra con il mouse. SOLO SE DESKTOP
+  $(document).ready(function() {
+      // Modifica il comportamento del dropdown menu per aprirsi passandoci sopra con il mouse solo su schermi più grandi
+      if ($(window).width() >= 992) { // Controlla se è un dispositivo desktop
+          $('.dropdown').hover(function() {
+              $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn(200);
+          }, function() {
+              $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut(200);
+          });
+      }
+  });
+</script>
+
+
+<script>
+  //script per mantenere sempre aperto il sottomenu nella navbar. SOLO SE MOBILE
+  $(document).ready(function() {
+      // Apri il sottomenu automaticamente sui dispositivi mobili
+      if ($(window).width() < 992) { // Controlla se è un dispositivo mobile
+          $('.dropdown-toggle').next('.dropdown-menu').slideDown();
+      }
+  });
+  </script>
+
+
+  
 
