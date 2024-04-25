@@ -337,3 +337,11 @@ il font-size per l'intero documento HTML sarà di 16 pixel.
     padding-top: 7rem;
     padding-bottom: 18rem;
 }
+
+.header-dariusare2{
+    
+    background-size: cover;
+    background-position: center;
+    padding-top: 18rem;
+    padding-bottom: 7rem;
+}
