@@ -345,3 +345,11 @@ il font-size per l'intero documento HTML sarà di 16 pixel.
     padding-top: 18rem;
     padding-bottom: 7rem;
 }
+
+
+.centrato-verticamente {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }

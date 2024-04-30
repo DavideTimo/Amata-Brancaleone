@@ -48,7 +48,6 @@
     
 
     <header class="head-banner text-white text-center">
-      <!-- NB le classi "container", "row", "col-xl-9 mx-auto" sono classi fornite da bootstrap -->
       <div class="container">
         <div class="row">
           <div class="col-xl-9 mx-auto">
@@ -58,6 +57,7 @@
       </div>
     </header>
 
+    <!-- sezione icone -->
     <section class="text-center sezione-icone ">
       <div class="container">
         <div class="row">
@@ -67,18 +67,6 @@
                 <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
               </svg>
               <h1>Divulgazione</h1>
-              <!-- 
-                lead: Questa classe di Bootstrap viene utilizzata per evidenziare un paragrafo di testo, 
-                solitamente rendendolo più grande e con uno stile più forte rispetto al testo normale. 
-                È comunemente utilizzato per evidenziare il contenuto principale o il titolo all'interno 
-                di un blocco di testo.
-
-                mb-0: Questa è una classe di utilità di Bootstrap. 
-                In questo contesto, "mb" sta per "margin-bottom", e "0" indica che non ci sarà 
-                alcun margine inferiore (0 pixel) applicato al paragrafo. Di solito, Bootstrap applica 
-                margini predefiniti agli elementi HTML, ma questa classe può essere utilizzata per 
-                annullare quel comportamento e ottenere il controllo più preciso dello spaziamento.
-              -->
               <p class="lead mb-0">L'associazione si propone di promuovere la conoscenza e l'apprezzamento della storia e dell'architettura della Rocca Brancaleone, coinvolgendo cittadini e turisti nel suo fascino secolare.</p>
             </div>
           </div>
@@ -107,20 +95,41 @@
       </div>
     </section>
 
-    <section class="sezione-immagini">
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-3 centrato-verticamente">
+            <img class="img-fluid" src="Image/decoro floreale sinistro.png" alt="Decoro Floreale Sinistro">
+          </div>
+          <div class="col-6">
+            <h1 class="display-2 text-center">
+              La nostra rocca
+            </h1>
+          </div>
+          <div class="col-3 centrato-verticamente">
+            <img class="img-fluid" src="Image/decoro floreale destro.png" alt="Decoro Floreale Destro">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="sezione-immagini mt-5">
       <div class="container-fluid p-0">
         <div class="row m-0 no-gutters">
-          <div class="col-lg-6 order-lg-2 immagine" style="background-image: url('Image/Rocca_ProgettoZonaSpettacoli.jpg');"></div>
-          <div class="col-lg-6 order-lg-1 lead testo">
-            <h2>Riqualificazione</h2>
-            <p> Lavori in corso per oltre 4 milioni di euro, con l'obiettivo della riqualificazione e valorizzazione dello spazio interno dell’arce tramite la creazione di un’arena per spettacoli all’aperto che potrà ospitare 1400 spettatori, comprensiva dei servizi necessari alla sua fruizione </p></div>
-        </div>
+          <div class="col-lg-6 order-lg-2 immagine" style="background-image: url('Image/Rocca_FotoAerea.jpg');"></div>
+            <div class="col-lg-6 order-lg-1 lead testo">
+              <h2>Il Monumento</h2>
+              <p> La Rocca venne eretta nel 1457. La Serenissima progettò la costruzione di una fortezza per difendere il lato nord/est del circuito murario fino a quel momento poco presidiato, in un’area della città a ridosso del fiume Montone, nei pressi di una grande strada per Venezia, e di una chiesa intitolata a Sant’Andrea dei Goti, fatta erigere da Teodorico poco distante dal suo Mausoleo.  </p>
+            </div>   
+          </div>
 
         <div class="row m-0 no-gutters">
-          <div class="col-lg-6 immagine" style="background-image: url('Image/Rocca_FotoAerea.jpg');"></div>
+          <div class="col-lg-6 immagine" style="background-image: url('Image/Rocca_ProgettoZonaSpettacoli.jpg');"></div>
           <div class="col-lg-6 lead testo">
-            <h2>Monumento</h2>
-            <p> La Rocca venne eretta nel 1457. La Serenissima progettò la costruzione di una fortezza per difendere il lato nord/est del circuito murario fino a quel momento poco presidiato, in un’area della città a ridosso del fiume Montone, nei pressi di una grande strada per Venezia, e di una chiesa intitolata a Sant’Andrea dei Goti, fatta erigere da Teodorico poco distante dal suo Mausoleo.  </p></div>
+            <h2>Riqualificazione</h2>
+            <p> Lavori in corso per oltre 4 milioni di euro, con l'obiettivo della riqualificazione e valorizzazione dello spazio interno dell’arce tramite la creazione di un’arena per spettacoli all’aperto che potrà ospitare 1400 spettatori, comprensiva dei servizi necessari alla sua fruizione </p>
+          </div>
         </div>
 
 
@@ -128,8 +137,19 @@
         <div class="row m-0 no-gutters ">
           <div class="col-lg-6 order-lg-2 immagine" style="background-image: url('Image/Rocca_NuovoRistorante.jpg');"></div>
           <div class="col-lg-6 order-lg-1 lead testo">
-            <h2>Cosa trovi dentro la rocca</h2>
-            <p> Il ristorante di nome <strong>Fulèr</strong>, «dal termine dialettale usato per i narratori che a inizio ‘900 avevano aiutato Silvestroni a ricostruire un patrimonio culturale meraviglioso». Sottoposto ad una serie di lavori architettonici di valorizzazione e recupero, offre ora un ambiente protetto e accogliente e ottima cucina. </p></div>
+            <div class="row">
+              <div class="col-3">
+                <img src="Image/Logo Fuler.jpg" style="max-height: 6rem;">
+              </div>
+              <div class="col-9 text-center centrato-verticamente">
+                <h2>Il ristorante Fulèr</h2>
+              </div>
+            </div>
+            <p> Il ristorante di nome Fulèr, «dal termine dialettale usato per i narratori che a inizio ‘900 avevano aiutato Silvestroni a ricostruire un patrimonio culturale meraviglioso». Sottoposto ad una serie di lavori architettonici di valorizzazione e recupero, offre ora un ambiente protetto e accogliente e ottima cucina. </p>
+            <a class="link-secondary" href="https://www.facebook.com/akamifuler" target="_blank">
+              <footer class="blockquote-footer"> Clicca qui per maggiori info</footer>
+            </a>
+          </div>
         </div>
 
       </div>
