@@ -353,3 +353,14 @@ il font-size per l'intero documento HTML sarà di 16 pixel.
     align-items: center;
     
   }
+
+
+    /* Stile per il testo */
+    .testoSopraImg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white; /* Colore del testo */
+        text-align: center; /* Allinea il testo al centro */
+      }
