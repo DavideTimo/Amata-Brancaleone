@@ -364,3 +364,9 @@ il font-size per l'intero documento HTML sarà di 16 pixel.
         color: white; /* Colore del testo */
         text-align: center; /* Allinea il testo al centro */
       }
+
+      .card-immagini-tagliate{
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
